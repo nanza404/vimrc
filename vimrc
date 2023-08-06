@@ -82,7 +82,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'vim-utils/vim-man'
 Plug 'preservim/nerdtree' |
       \ Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -101,9 +100,9 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
-hi IndentGuidesOdd ctermbg=darkgrey
-hi IndentGuidesEven ctermbg=black
+let g:indent_guides_guide_size = 4
+"hi IndentGuidesOdd ctermbg=darkgrey
+"hi IndentGuidesEven ctermbg=darkgrey
 
 " ctrl-n toggles nerdtree file explorer " 
 nnoremap <C-n> :NERDTreeToggle<CR>
@@ -117,6 +116,4 @@ noremap <C-h> <C-w>h
 " F1 toggles highlight search "
 set hlsearch!
 nnoremap <F1> :set hlsearch!<CR>
-
-
 
